@@ -24,6 +24,32 @@
         <li><strong>ID</strong><span th:text="${empleado.id}"></span></li>
     </ul>
 
+    <h1>Lista empleados</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Dirección</th>
+                <th>Puesto</th>
+                <th>Edad</th>
+                <th>Teléfono</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="empleado : ${Empleados}">
+                <td th:text="${empleado.nombre}"></td>
+                <td th:text="${empleado.apellido}"></td>
+                <td th:text="${empleado.direccion}"></td>
+                <td th:text="${empleado.puesto}"></td>
+                <td th:text="${empleado.edad}"></td>
+                <td th:text="${empleado.telefono}"></td>
+                <td th:text="${empleado.id}"></td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 
 </html>
