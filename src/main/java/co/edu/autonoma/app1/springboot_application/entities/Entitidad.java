@@ -1,10 +1,13 @@
 package co.edu.autonoma.app1.springboot_application.entities;
 
+
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
+
+
 
 @Data
 @AllArgsConstructor
@@ -16,7 +19,8 @@ public class Entitidad {
 
     @Id
     @Column(name = "id")
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Column(name = "nombre")
     private String nombre;
