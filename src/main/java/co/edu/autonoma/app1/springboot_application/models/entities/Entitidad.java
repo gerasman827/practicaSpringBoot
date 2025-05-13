@@ -1,4 +1,4 @@
-package co.edu.autonoma.app1.springboot_application.entities;
+package co.edu.autonoma.app1.springboot_application.models.entities;
 
 
 

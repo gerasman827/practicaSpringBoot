@@ -3,7 +3,7 @@ package co.edu.autonoma.app1.springboot_application.controllers;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.edu.autonoma.app1.springboot_application.models.Empleados;
+import co.edu.autonoma.app1.springboot_application.models.EmpleadosEntity;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,7 +23,7 @@ public class PathVariableController {
     }
 
     @PostMapping("/solicitud")
-    public Empleados creaEmpleado(@RequestBody Empleados empleado1){
+    public EmpleadosEntity creaEmpleado(@RequestBody EmpleadosEntity empleado1){
 
         return empleado1;
     }
